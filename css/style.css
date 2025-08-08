@@ -148,6 +148,7 @@ span {
   grid-template-columns: 1.2fr 1fr;
   grid-template-rows: 70vh;
   justify-content: start;
+  align-content: center;
   gap: var(--space-lg);
 }
 .hero-image {
@@ -199,4 +200,57 @@ ion-icon:hover {
 }
 footer {
   color: black;
+  padding-block: var(--space-md);
+  text-align: center;
+}
+
+@media (max-width: 1240px) {
+  .hero-heading {
+    font-size: var(--text-h4);
+    margin-bottom: var(--space-md);
+  }
+}
+@media (max-width: 1030px) {
+  .hero-content {
+    padding: var(--space-lg) var(--space-sm);
+  }
+}
+@media (max-width: 920px) {
+  html {
+    font-size: 56.25%;
+  }
+  .hero-content {
+    padding: var(--space-md) var(--space-sm);
+  }
+}
+@media (max-width: 775px) {
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--space-sm);
+  }
+  .logo {
+    width: 150px;
+    padding: var(--space-sm) 0;
+  }
+  .hero-image {
+    background-position: center;
+    background-size: contain;
+  }
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+  .social-link {
+    justify-content: center;
+    margin-top: var(--space-sm);
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+  .btn-register {
+    padding: var(--space-sm) var(--space-md);
+  }
 }
